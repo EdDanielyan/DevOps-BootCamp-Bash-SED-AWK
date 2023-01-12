@@ -2,7 +2,7 @@
 
 # Put you code here
 
-cp /etc/passwd /home/ubuntu/passwd_new
+cp /home/ubuntu/passwd /home/ubuntu/passwd_new
 
 awk -F: '$1 == "saned" {$7="/bin/bash"} 1' /home/ubuntu/passwd_new OFS=":" passwd_new
 
